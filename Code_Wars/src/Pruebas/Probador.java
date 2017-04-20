@@ -9,9 +9,7 @@ import Programas_5Kyu.Rotate_A_Square;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import javafx.scene.input.RotateEvent;
-import javafx.scene.transform.Rotate;
-
+import java.util.Arrays;
 /**
  *
  * @author Mauna Kea
@@ -50,10 +48,10 @@ public class Probador {
             for(String uno:hola){
                 solucion=solucion+" "+uno;
             }*/
-            System.out.println(Rotate_A_Square.rotateLikeAVortex(new int[][] { new int[] { 5, 3, 6, 1 },
-                                 new int[] { 5, 8, 7, 4 },
-                                 new int[] { 1, 2, 4, 3 },
-                                 new int[] {3, 1, 2, 2}}));
+            System.out.println(Arrays.deepToString(Rotate_A_Square.rotateLikeAVortex(new int[][] { new int[] { 5, 3, 6, 1 },
+                new int[] { 5, 8, 7, 4 },
+                new int[] { 1, 2, 4, 3 },
+                new int[] {3, 1, 2, 2}})));
             //}
 
         }
