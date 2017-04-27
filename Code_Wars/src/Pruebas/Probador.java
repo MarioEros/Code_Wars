@@ -48,10 +48,12 @@ public class Probador {
             for(String uno:hola){
                 solucion=solucion+" "+uno;
             }*/
-            System.out.println(Arrays.deepToString(Rotate_A_Square.rotateLikeAVortex(new int[][] { new int[] { 5, 3, 6, 1 },
+            String pruebas = "hola gold";
+            System.out.println(pruebas.substring(0, pruebas.length()-5));
+            /*System.out.println(Arrays.deepToString(Rotate_A_Square.rotateLikeAVortex(new int[][] { new int[] { 5, 3, 6, 1 },
                 new int[] { 5, 8, 7, 4 },
                 new int[] { 1, 2, 4, 3 },
-                new int[] {3, 1, 2, 2}})));
+                new int[] {3, 1, 2, 2}})));*/
             //}
 
         }
