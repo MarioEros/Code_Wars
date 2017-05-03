@@ -7,12 +7,9 @@ package Programas_6Kyu;
 
 import java.util.Arrays;
 
-/**
- *
- * @author Mauna Kea
- */caca
+
 public class Piano_Kata_2 {
     public static String whichNote(int keyPressCount) {
-        return Arrays.asList(1,4,6,9,11).contains( (keyPressCount-1) % 88 % 12 ) ? "black" : "white";
+        return Arrays.asList("A","A#","B","C","C#","D","D#","E","F","F#","G","G#").get((keyPressCount-1) % 88 % 12);
     }
 }
