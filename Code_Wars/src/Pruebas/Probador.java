@@ -5,14 +5,11 @@
  */
 package Pruebas;
 
-import Programas_5Kyu.Rotate_A_Square;
 import Programas_6Kyu.Piano_Kata_1;
 import Programas_6Kyu.Piano_Kata_2;
-import Programas_7kyu.Resistor_Color_Codes;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 /**
  *
  * @author Mauna Kea
@@ -28,7 +25,7 @@ public class Probador {
             //String[] dividido = prueba.split(" ");
             //long num=Long.parseLong(prueba);
             //String solucion="";
-            int primo=Integer.parseInt(prueba);
+            //int primo=Integer.parseInt(prueba);
             //BigInteger big=BigInteger.valueOf(Long.parseLong(prueba));
            // int num = Integer.parseInt(prueba);
             //int[] arraynum = new int[dividido.length];
@@ -51,9 +48,7 @@ public class Probador {
             for(String uno:hola){
                 solucion=solucion+" "+uno;
             }*/
-            System.out.println(Piano_Kata_1.blackOrWhiteKey(primo));
-            System.out.println(Piano_Kata_2.whichNote(primo));
-            System.out.println((primo-1)%88%12);
+            System.out.println(prueba.substring(0, prueba.indexOf(" ohms")));
             /*System.out.println(Arrays.deepToString(Rotate_A_Square.rotateLikeAVortex(new int[][] { new int[] { 5, 3, 6, 1 },
                 new int[] { 5, 8, 7, 4 },
                 new int[] { 1, 2, 4, 3 },

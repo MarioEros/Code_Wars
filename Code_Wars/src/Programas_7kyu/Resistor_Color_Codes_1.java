@@ -10,7 +10,7 @@ package Programas_7kyu;
  * @author Mauna Kea
  */
 
-public class Resistor_Color_Codes {
+public class Resistor_Color_Codes_1 {
     public static String decodeResistorColors(String bands) {
         String solucion="";
         if(bands.endsWith("gold")){
