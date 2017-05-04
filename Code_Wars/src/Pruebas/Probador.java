@@ -6,6 +6,7 @@
 package Pruebas;
 
 import Betas.Time_Conversion;
+import Programas_4Kyu.Range_Extraction;
 import Programas_5Kyu.Resistor_Color_Codes_2;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -25,16 +26,15 @@ public class Probador {
         while (true) {
             String prueba = br.readLine();
             if (prueba.equalsIgnoreCase("fin"))break;
-            //int[] ola={0};
-            //String[] dividido = prueba.split(" ");
+            String[] dividido = prueba.split(" ");
             //long num=Long.parseLong(prueba);
             //String solucion="";
             //int primo=Integer.parseInt(prueba);
             //BigInteger big=BigInteger.valueOf(Long.parseLong(prueba));
            // int num = Integer.parseInt(prueba);
-            //int[] arraynum = new int[dividido.length];
-            //for (int i = 0; i < arraynum.length; i++) {
-            //    arraynum[i] = Integer.parseInt(dividido[i]);}
+            int[] arraynum = new int[dividido.length];
+            for (int i = 0; i < arraynum.length; i++) {
+                arraynum[i] = Integer.parseInt(dividido[i]);}
             //double[] solucion = Tribonacci_Sequence.tribonacci(arraynum, num);
             //for (int e = 0; e < solucion.length; e++) {*/
             /*boolean isPrimo=false;
@@ -61,7 +61,7 @@ public class Probador {
 //                    +matrix[1][matrix.length-1]+matrix[2][matrix.length-1]
 //                    +Arrays.toString(matrix[matrix.length-1])
 //                    +matrix[1][0]+matrix[2][0];
-            System.out.println(Time_Conversion.convertTime(prueba));
+            System.out.println(Range_Extraction.rangeExtraction(arraynum));
             /*System.out.println(Arrays.deepToString(Rotate_A_Square.rotateLikeAVortex(new int[][] { new int[] { 5, 3, 6, 1 },
                 new int[] { 5, 8, 7, 4 },
                 new int[] { 1, 2, 4, 3 },
