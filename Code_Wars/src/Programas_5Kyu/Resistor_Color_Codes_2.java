@@ -11,33 +11,42 @@ package Programas_5Kyu;
  */
 public class Resistor_Color_Codes_2 {
     public static String encodeResistorColors(String ohmsString) {
-        String solucion=" gold";
+        String solucion="";
         ohmsString=ohmsString.substring(0, ohmsString.indexOf(" ohms"));
-        int resistencia=0;
+        float resistencia=0;
         String resi="";
         if(ohmsString.endsWith("M")){
-            resistencia=Integer.parseInt(ohmsString.substring(0, ohmsString.length()-1));
+            resistencia=Float.parseFloat(ohmsString.substring(0, ohmsString.length()-1));
             resistencia=resistencia*1000000;
+            resi=Integer.toString((int)resistencia);
         }else if(ohmsString.endsWith("k")){
-            resistencia=Integer.parseInt(ohmsString.substring(0, ohmsString.length()-1));
+            resistencia=Float.parseFloat(ohmsString.substring(0, ohmsString.length()-1));
             resistencia=resistencia*1000;
+            resi=Integer.toString((int)resistencia);
+        }else resi=ohmsString;
+        solucion=devuelveValores(resi.substring(0,1));
+        resi=resi.substring(1);
+        if (resi.length() > 0) {
+            solucion = solucion + devuelveValores(resi.substring(0, 1));
+            resi = resi.substring(1);
         }
-        resi=
+        solucion = solucion + devuelveValores(Integer.toString(resi.length()));
         
+        solucion=solucion+"gold";
         return solucion;
     }
-    public static String devuelveValores(int num){
+    public static String devuelveValores(String num){
         switch(num){
-               case 0: return "black ";
-               case 1: return "brown ";
-               case 2: return "red ";
-               case 3: return "orange ";
-               case 4: return "yellow ";
-               case 5: return "green ";
-               case 6: return "blue ";
-               case 7: return "violet ";
-               case 8: return "gray ";
-               case 9: return "white ";
+               case "0": return "black ";
+               case "1": return "brown ";
+               case "2": return "red ";
+               case "3": return "orange ";
+               case "4": return "yellow ";
+               case "5": return "green ";
+               case "6": return "blue ";
+               case "7": return "violet ";
+               case "8": return "gray ";
+               case "9": return "white ";
         }
         return null;
     }

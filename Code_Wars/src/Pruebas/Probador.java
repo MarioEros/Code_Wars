@@ -5,8 +5,7 @@
  */
 package Pruebas;
 
-import Programas_6Kyu.Piano_Kata_1;
-import Programas_6Kyu.Piano_Kata_2;
+import Programas_5Kyu.Resistor_Color_Codes_2;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -48,7 +47,8 @@ public class Probador {
             for(String uno:hola){
                 solucion=solucion+" "+uno;
             }*/
-            System.out.println(prueba.substring(0, prueba.indexOf(" ohms")));
+            //System.out.println(Float.toString(Float.parseFloat("4.7")*10));
+            System.out.println(Resistor_Color_Codes_2.encodeResistorColors(prueba));
             /*System.out.println(Arrays.deepToString(Rotate_A_Square.rotateLikeAVortex(new int[][] { new int[] { 5, 3, 6, 1 },
                 new int[] { 5, 8, 7, 4 },
                 new int[] { 1, 2, 4, 3 },
