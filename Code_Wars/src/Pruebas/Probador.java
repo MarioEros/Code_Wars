@@ -5,10 +5,15 @@
  */
 package Pruebas;
 
+import Betas.Time_Conversion;
 import Programas_5Kyu.Resistor_Color_Codes_2;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
+import java.sql.Time;
+import java.util.Arrays;
+import java.util.stream.Collectors;
 /**
  *
  * @author Mauna Kea
@@ -48,7 +53,15 @@ public class Probador {
                 solucion=solucion+" "+uno;
             }*/
             //System.out.println(Float.toString(Float.parseFloat("4.7")*10));
-            System.out.println(Resistor_Color_Codes_2.encodeResistorColors(prueba));
+            int[][] matrix = new int[][] { new int[] { 5, 3, 6, 1 },
+                                 new int[] { 5, 8, 7, 4 },
+                                 new int[] { 1, 2, 4, 3 },
+                                 new int[] { 3, 1, 2, 2 } };
+//            String uno=Arrays.toString(matrix[0])
+//                    +matrix[1][matrix.length-1]+matrix[2][matrix.length-1]
+//                    +Arrays.toString(matrix[matrix.length-1])
+//                    +matrix[1][0]+matrix[2][0];
+            System.out.println(Time_Conversion.convertTime(prueba));
             /*System.out.println(Arrays.deepToString(Rotate_A_Square.rotateLikeAVortex(new int[][] { new int[] { 5, 3, 6, 1 },
                 new int[] { 5, 8, 7, 4 },
                 new int[] { 1, 2, 4, 3 },
