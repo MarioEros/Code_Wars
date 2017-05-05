@@ -5,9 +5,9 @@
  */
 package Programas_4Kyu;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Collections;
-
 
 /**
  *
@@ -15,21 +15,14 @@ import java.util.Collections;
  */
 public class Twice_Linear {
     public static int dblLinear (int n) {
-        ArrayList<Integer> num=new ArrayList<>();
-        num.add(1);
-//        Stream<Integer> stNum=num.stream()
-//                .map(numero->numero*2+1)
-//                .map(numero->numero*3+1)
-//                .sorted()
-//                .collect(Collectors.toSet());
-        for(int i=0;i<=n/2;i++){
-        num.add(2*num.get(i)+1);
-        num.add(3*num.get(i)+1);
+        ArrayList<BigInteger> num=new ArrayList<>();
+        num.add(BigInteger.ONE);
+        for(int i=0;i<=n;i++){
+       if(!num.contains(num.get(0).multiply(BigInteger.valueOf(2)).add(BigInteger.ONE)))num.add(num.get(0).multiply(BigInteger.valueOf(2)).add(BigInteger.ONE));
+       if(!num.contains(num.get(0).multiply(BigInteger.valueOf(3)).add(BigInteger.ONE)))num.add(num.get(0).multiply(BigInteger.valueOf(3)).add(BigInteger.ONE));
+       num.remove(0);
         Collections.sort(num);
-        System.out.println("el num "+num.get(i)
-                +" da: "+(2*num.get(i)+1)
-                +" y "+(3*num.get(i)+1));
         }
-        return num.get(n);
+        return Integer.parseInt(num.get(0).toString());
     }
 }

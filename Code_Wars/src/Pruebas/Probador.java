@@ -5,17 +5,10 @@
  */
 package Pruebas;
 
-import Betas.Time_Conversion;
-import Programas_4Kyu.Range_Extraction;
 import Programas_4Kyu.Twice_Linear;
-import Programas_5Kyu.Resistor_Color_Codes_2;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.reflect.Array;
-import java.sql.Time;
-import java.util.Arrays;
-import java.util.stream.Collectors;
 /**
  *
  * @author Mauna Kea
