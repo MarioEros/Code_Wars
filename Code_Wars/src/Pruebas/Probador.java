@@ -6,6 +6,7 @@
 package Pruebas;
 
 import Programas_4Kyu.Twice_Linear;
+import Programas_6Kyu.Give_Me_A_Diamond;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -23,9 +24,9 @@ public class Probador {
             String[] dividido = prueba.split(" ");
             //long num=Long.parseLong(prueba);
             //String solucion="";
-            //int primo=Integer.parseInt(prueba);
+            int primo=Integer.parseInt(prueba);
             //BigInteger big=BigInteger.valueOf(Long.parseLong(prueba));
-           int num = Integer.parseInt(prueba);
+           //int num = Integer.parseInt(prueba);
 //            int[] arraynum = new int[dividido.length];
 //            for (int i = 0; i < arraynum.length; i++) {
 //                arraynum[i] = Integer.parseInt(dividido[i]);}
@@ -55,7 +56,7 @@ public class Probador {
 //                    +matrix[1][matrix.length-1]+matrix[2][matrix.length-1]
 //                    +Arrays.toString(matrix[matrix.length-1])
 //                    +matrix[1][0]+matrix[2][0];
-            System.out.println(Twice_Linear.dblLinear(num));
+            System.out.println(Give_Me_A_Diamond.print(primo));
             }
         }
 }

@@ -13,6 +13,7 @@ import java.util.Collections;
  *
  * @author Mauna Kea
  */
+streammap
 public class Twice_Linear {
     public static int dblLinear (int n) {
         ArrayList<BigInteger> num=new ArrayList<>();
