@@ -5,7 +5,6 @@
  */
 package Programas_4Kyu;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -15,6 +14,7 @@ import java.util.Arrays;
 public class Next_smaller_number {
     public static long nextSmaller(long n){
         String[] numeros=Long.toString(n).split("");
+        if(numeros.length==1)return -1;
         byte[] num=new byte[numeros.length];
         for(int i=0;i< numeros.length; i++) {
             num[i] = Byte.parseByte(numeros[i]);
@@ -31,10 +31,26 @@ public class Next_smaller_number {
         //buscamos el numero mas grande que sea mas pequeño del cambio
         int pos=0;
         byte max=0;
-        for(int i=cambio;i<num.length;i++){
-            if(num[cambio]>num[i]&&num[i]>max)max=num[i];
+        for(int i=cambio+1;i<num.length;i++){
+            if(num[cambio]>num[i]&&num[i]>=max){
+                max=num[i];
+                pos=i;
+            }
         }
-        String devolver="";
-      return Long.parseLong(devolver);
+        String resultado="";
+        for(int i=0;i<cambio;i++)resultado=resultado+num[i];
+        resultado=resultado+max;
+        int cont=0;
+        byte[] numerosAOrdenar=new byte[num.length-(cambio+1)];
+        for (int i = cambio; i < num.length; i++) {
+            if (i != pos) {
+                numerosAOrdenar[cont] = num[i];
+                cont++;
+            }
+        }
+        Arrays.sort(numerosAOrdenar);
+        for (int i = numerosAOrdenar.length-1; i >= 0;i--)resultado=resultado+numerosAOrdenar[i];
+        if(resultado.startsWith("0"))return -1;
+      return Long.parseLong(resultado);
     }
 }
