@@ -5,6 +5,7 @@
  */
 package Pruebas;
 
+import Programas_4Kyu.Codewar_Style_Ranking_System;
 import Programas_4Kyu.Next_smaller_number;
 import Programas_4Kyu.Twice_Linear;
 import Programas_6Kyu.Give_Me_A_Diamond;
@@ -37,7 +38,9 @@ public class Probador {
 //                    +matrix[1][matrix.length-1]+matrix[2][matrix.length-1]
 //                    +Arrays.toString(matrix[matrix.length-1])
 //                    +matrix[1][0]+matrix[2][0];
-            System.out.println(Next_smaller_number.nextSmaller(numlong));
+            Codewar_Style_Ranking_System.User usuario=new Codewar_Style_Ranking_System.User();
+            usuario.rank();
+            System.out.println();
             }
         }
 }

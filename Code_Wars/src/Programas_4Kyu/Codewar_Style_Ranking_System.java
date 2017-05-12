@@ -5,22 +5,39 @@
  */
 package Programas_4Kyu;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Mauna Kea
  */
 public class Codewar_Style_Ranking_System {
-    private class User{
-        byte myRank=-8;
-        byte myProgress=0;
-        public void rank(){
-            
+    public static class User{
+        int myRank=-7;
+        int myProgress=0;
+        public int rank(){
+            return myRank<1?myRank-1:myRank;
         }
-        public void progress(){
-            
+        
+        public int progress(){
+            return myProgress;
         }
         public void incProgress(int rank){
-            
+            if(rank<0)rank+=1;
+            if (rank<-7||rank>8)Logger.getLogger("Error").log(Level.SEVERE, "Rango no valido");
+            else{
+                if(myRank>rank+1)myProgress+=0;
+                else if(myRank==rank+1)myProgress+=1;
+                else if(myRank==rank)myProgress+=3;
+                else{
+                    myProgress+=10*(rank-myProgress)*(rank-myProgress);
+                }
+            }
+            while(myProgress<100){
+                myProgress-=100;
+                myRank+=1;
+            }
         }
     }
 }
