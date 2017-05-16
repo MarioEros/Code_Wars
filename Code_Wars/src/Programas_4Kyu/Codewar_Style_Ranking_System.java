@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 /**
  *
  * @author Mauna Kea
- */
+ */hey!
 public class Codewar_Style_Ranking_System {
     public static class User{
         int myRank=-7;
