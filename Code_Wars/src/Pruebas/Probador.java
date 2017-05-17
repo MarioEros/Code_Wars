@@ -31,11 +31,11 @@ public class Probador {
 //            byte numbyte=Byte.parseByte(prueba);
 //            short numshort=Short.parseShort(prueba);
 //            int numint=Integer.parseInt(prueba);
-            //long numlong=Long.parseLong(prueba);
-            int[][] matrix = new int[][] { new int[] { 5, 3, 6, 1 },
-                                 new int[] { 5, 8, 7, 4 },
-                                 new int[] { 1, 2, 4, 3 },
-                                 new int[] { 3, 1, 2, 2 } };
+//            long numlong=Long.parseLong(prueba);
+//            int[][] matrix = new int[][] { new int[] { 5, 3, 6, 1 },
+//                                 new int[] { 5, 8, 7, 4 },
+//                                 new int[] { 1, 2, 4, 3 },
+//                                 new int[] { 3, 1, 2, 2 } };
 //            String uno=Arrays.toString(matrix[0])
 //                    +matrix[1][matrix.length-1]+matrix[2][matrix.length-1]
 //                    +Arrays.toString(matrix[matrix.length-1])
