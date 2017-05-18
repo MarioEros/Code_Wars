@@ -13,8 +13,17 @@ import java.util.Arrays;
  * @author Mauna Kea
  */
 public class The_Road_Kill {
+static ArrayList<String> animales=new ArrayList<>(Arrays.asList(
+                "aardvark", "alligator", "armadillo", "antelope", "baboon", "bear",
+                "bobcat", "chameleon","giraffe", "gibbon", "penguin", "gecko", "hyena",
+                "hippopotamus", "horse", "hamster", "insect", "impala", "iguana",
+                "ibis", "squirrel", "sheep", "turtle", "snake", "tiger", "unicorn", "yak", "zebra"));
     public static String roadKill(final String photo) {
+        System.out.println(photo);
         String fotoProcesada=photo.replaceAll("=", "");
+        if(fotoProcesada.contains(" "))return "??";
+        System.out.println(fotoProcesada);
+        if (fotoProcesada.equalsIgnoreCase(""))return "??";
         StringBuilder animalSimple=new StringBuilder();
         char[] letras=fotoProcesada.toCharArray();
         String elim1="";
@@ -23,12 +32,10 @@ public class The_Road_Kill {
            else animalSimple.append(letras[i]);
        }
        animalSimple.append(letras[0]);
-        ArrayList<String> animales=new ArrayList<>(Arrays.asList(
-                "aardvark", "alligator", "armadillo", "antelope", "baboon", "bear",
-                "bobcat", "chameleon","giraffe", "gibbon", "gecko", "hyena",
-                "hippopotamus", "horse", "hamster", "insect", "impala", "iguana",
-                "ibis", "squirrel", "sheep", "turtle", "tiger", "unicorn", "yak", "zebra"));
-        for(String anim:animales){
+        for(String anim:
+                //Preloaded.ANIMALS
+            animales
+                ){
         String animal="";
         String elim2="";
             char[] an=anim.toCharArray();
@@ -37,8 +44,9 @@ public class The_Road_Kill {
            else animal=an[i]+animal;
        }
             animal=an[0]+animal;
-            if((animal.equalsIgnoreCase(animalSimple.toString())||animal.equalsIgnoreCase(animalSimple.reverse().toString()))&&elim1.contains(elim2))return anim;
+            if((animal.equals(animalSimple.toString())||animal.equals(animalSimple.reverse().toString()))&&elim1.contains(elim2))return anim;
         }
     return "??";
   }
+        
 }

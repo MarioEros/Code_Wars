@@ -5,15 +5,12 @@
  */
 package Pruebas;
 
-import Programas_4Kyu.Codewar_Style_Ranking_System;
-import Programas_4Kyu.Next_smaller_number;
-import Programas_4Kyu.Twice_Linear;
 import Programas_5Kyu.The_Road_Kill;
-import Programas_6Kyu.Give_Me_A_Diamond;
-import Programas_8kyu.Alternating_Case;
 import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 /**
  *
  * @author Mauna Kea
@@ -21,11 +18,14 @@ import java.io.InputStreamReader;
 public class Probador {
 
     public static void main(String[] args) throws IOException {
+        //BufferedReader br = new BufferedReader(new FileReader("src/Pruebas/datos"));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        //Scanner in = new Scanner("datos");
         while (true) {
             String prueba = br.readLine();
+            //String prueba = in.nextLine();
             if (prueba.equalsIgnoreCase("fin"))break;
-            String[] dividido = prueba.split(" ");
+            //String[] dividido = prueba.split(" ");
 //            double numdouble=Double.parseDouble(prueba);
 //            float numfloat=Float.parseFloat(prueba);
 //            byte numbyte=Byte.parseByte(prueba);
