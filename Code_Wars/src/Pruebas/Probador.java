@@ -6,10 +6,13 @@
 package Pruebas;
 
 import Programas_5Kyu.The_Road_Kill;
+import Programas_6Kyu.The_Hunger_Games;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.Scanner;
 /**
  *
@@ -40,7 +43,7 @@ public class Probador {
 //                    +matrix[1][matrix.length-1]+matrix[2][matrix.length-1]
 //                    +Arrays.toString(matrix[matrix.length-1])
 //                    +matrix[1][0]+matrix[2][0];
-            System.out.println(The_Road_Kill.roadKill(prueba));
+            System.out.println(The_Hunger_Games.hungryFoxes(prueba));
         }
     }
 }
