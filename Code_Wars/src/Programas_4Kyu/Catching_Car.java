@@ -51,14 +51,14 @@ public class Catching_Car {
                     incremental3=false;
                 }
             }
-            for (int i=numero1.length-1;i>0;i--){
-                if (Integer.parseInt(numero1[i])+1!=Integer.parseInt(numero1[i-1])&&!(Integer.parseInt(numero1[i])==9&&Integer.parseInt(numero1[i-1])==0)){
+            for (int i=0;i<numero1.length-1;i++){
+                if (Integer.parseInt(numero1[i])!=Integer.parseInt(numero1[i+1])+1/*&&!(Integer.parseInt(numero1[i])==0&&Integer.parseInt(numero1[i+1])==9)*/){
                     decremental1=false;
                 }
-                if (Integer.parseInt(numero2[i])+1!=Integer.parseInt(numero2[i-1])&&!(Integer.parseInt(numero2[i])==9&&Integer.parseInt(numero2[i-1])==0)){
+                if (Integer.parseInt(numero2[i])!=Integer.parseInt(numero2[i+1])+1/*&&!(Integer.parseInt(numero2[i])==0&&Integer.parseInt(numero2[i+1])==9)*/){
                     decremental2=false;
                 }
-                if (Integer.parseInt(numero3[i])+1!=Integer.parseInt(numero3[i-1])&&!(Integer.parseInt(numero3[i])==9&&Integer.parseInt(numero3[i-1])==0)){
+                if (Integer.parseInt(numero3[i])!=Integer.parseInt(numero3[i+1])+1/*&&!(Integer.parseInt(numero3[i])==0&&Integer.parseInt(numero3[i+1])==9)*/){
                     decremental3=false;
                 }
             }
@@ -74,7 +74,7 @@ public class Catching_Car {
             if (uno==number2||uno==number3)return 1;
         }
             
-        }else if(number==99)return 1;
+        }else if(number==99||number==98)return 1;
         return 0;
   }
 }
