@@ -16,8 +16,8 @@ public class The_Hunger_Games {
         String sacaJaulas="]"+farm+"[";
         String[] jaulas=sacaJaulas.split("\\][C.F]*\\[");
         //Comprobamos si hay un zorro fuera
-        boolean zorroFuera=false;
-        for(String zorro:granja)if(zorro.contains("F"))zorroFuera=true;
+        boolean isZorroFuera=false;
+        for(String zorro:granja)if(zorro.contains("F"))isZorroFuera=true;
         //Si hay un zorro fuera se come las gallinas
         for(int i=0;i<granja.length;i++)if(zorroFuera)granja[i]=granja[i].replace("C", ".");
         for(int i=0;i<jaulas.length;i++)if(jaulas[i].contains("F"))jaulas[i]=jaulas[i].replace("C", ".");
