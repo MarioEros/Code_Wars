@@ -19,7 +19,7 @@ public class The_Hunger_Games {
         boolean isZorroFuera=false;
         for(String zorro:granja)if(zorro.contains("F"))isZorroFuera=true;
         //Si hay un zorro fuera se come las gallinas
-        for(int i=0;i<granja.length;i++)if(zorroFuera)granja[i]=granja[i].replace("C", ".");
+        for(int i=0;i<granja.length;i++)if(isZorroFuera)granja[i]=granja[i].replace("C", ".");
         for(int i=0;i<jaulas.length;i++)if(jaulas[i].contains("F"))jaulas[i]=jaulas[i].replace("C", ".");
 //        System.out.println(granja[0]+granja[1]+granja[2]+granja[3]);
 //        System.out.println(jaulas[1]+jaulas[2]+jaulas[3]);
@@ -27,6 +27,7 @@ public class The_Hunger_Games {
         String devolver="";
         int mayor=Math.max(granja.length, jaulas.length);
         for(int i=0;i<mayor;i++)devolver=devolver+"["+(jaulas.length>i?jaulas[i]:jaulas==null?"[]":"")+"]"+(granja.length>i?granja[i]:"");
+        if(farm.endsWith("[]"))devolver=devolver+"[]";
     return devolver.substring(2);
   }
 }

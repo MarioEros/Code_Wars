@@ -10,5 +10,8 @@ package Programas_2Kyu;
  * @author Yossy
  */
 public class By_4_Skyscrapers {
-    
+    static int[][] solvePuzzle (int[] clues) {
+        
+    return new int[4][4];
+  }
 }

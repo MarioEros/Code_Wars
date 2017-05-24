@@ -5,7 +5,6 @@
  */
 package Pruebas;
 
-import Programas_4Kyu.Codewar_Style_Ranking_System;
 import Programas_6Kyu.The_Hunger_Games;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -37,11 +36,7 @@ public class Probador {
 //                    +matrix[1][matrix.length-1]+matrix[2][matrix.length-1]
 //                    +Arrays.toString(matrix[matrix.length-1])
 //                    +matrix[1][0]+matrix[2][0];
-                    System.out.println("hola");
-                    Codewar_Style_Ranking_System.user usuario=new Codewar_Style_Ranking_System.user();
-                    usuario.incProgress(5);
-                    int rango=usuario.rank();
-            System.out.println(rango);
+                    System.out.println(The_Hunger_Games.hungryFoxes(prueba));
         }
     }
 }
