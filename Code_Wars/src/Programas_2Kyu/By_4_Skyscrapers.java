@@ -11,7 +11,7 @@ package Programas_2Kyu;
  */
 public class By_4_Skyscrapers {
     static int[][] solvePuzzle (int[] clues) {
-        
+        hola
     return new int[4][4];
   }
 }
