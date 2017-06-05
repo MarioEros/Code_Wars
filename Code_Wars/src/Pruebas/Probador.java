@@ -6,10 +6,10 @@
 package Pruebas;
 
 import Programas_5Kyu.Play_Darts;
-import Programas_6Kyu.The_Hunger_Games;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.math.BigInteger;
 /**
  *
  * @author Mauna Kea
@@ -22,9 +22,9 @@ public class Probador {
         while (true) {
             String prueba = br.readLine();
             if (prueba.equalsIgnoreCase("fin"))break;
-            String[] dividido = prueba.split(" ");
-            double uno=Double.parseDouble(dividido[0]);
-            double dos=Double.parseDouble(dividido[1]);
+//            String[] dividido = prueba.split(" ");
+//            double uno=Double.parseDouble(dividido[0]);
+//            double dos=Double.parseDouble(dividido[1]);
 //            double numdouble=Double.parseDouble(prueba);
 //            float numfloat=Float.parseFloat(prueba);
 //            byte numbyte=Byte.parseByte(prueba);
@@ -39,7 +39,7 @@ public class Probador {
 //                    +matrix[1][matrix.length-1]+matrix[2][matrix.length-1]
 //                    +Arrays.toString(matrix[matrix.length-1])
 //                    +matrix[1][0]+matrix[2][0];
-                    System.out.println(Play_Darts.getScore(uno, dos));
+                    System.out.println(new BigInteger(prueba).isProbablePrime(1));
         }
     }
 }
