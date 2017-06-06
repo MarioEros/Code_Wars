@@ -5,7 +5,6 @@
  */
 package Pruebas;
 
-import Programas_5Kyu.Play_Darts;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -39,7 +38,9 @@ public class Probador {
 //                    +matrix[1][matrix.length-1]+matrix[2][matrix.length-1]
 //                    +Arrays.toString(matrix[matrix.length-1])
 //                    +matrix[1][0]+matrix[2][0];
-                    System.out.println(new BigInteger(prueba).isProbablePrime(1));
+StringBuilder pepe=new StringBuilder("pepe");
+pepe.append(true);
+                    System.out.println(pepe);
         }
     }
 }
