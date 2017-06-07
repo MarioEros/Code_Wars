@@ -9,6 +9,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.math.BigInteger;
+import java.util.regex.Pattern;
 /**
  *
  * @author Mauna Kea
@@ -38,9 +39,9 @@ public class Probador {
 //                    +matrix[1][matrix.length-1]+matrix[2][matrix.length-1]
 //                    +Arrays.toString(matrix[matrix.length-1])
 //                    +matrix[1][0]+matrix[2][0];
-StringBuilder pepe=new StringBuilder("pepe");
-pepe.append(true);
-                    System.out.println(pepe);
+String pepe="caraculo";
+                    System.out.println(pepe.indexOf(prueba));
+                    
         }
     }
 }
