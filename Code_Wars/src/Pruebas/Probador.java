@@ -8,8 +8,6 @@ package Pruebas;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.math.BigInteger;
-import java.util.regex.Pattern;
 /**
  *
  * @author Mauna Kea
@@ -39,10 +37,7 @@ public class Probador {
 //                    +matrix[1][matrix.length-1]+matrix[2][matrix.length-1]
 //                    +Arrays.toString(matrix[matrix.length-1])
 //                    +matrix[1][0]+matrix[2][0];
-            String pepe="caraculo";
-            for(int i=0;i<10000;i++){
-            System.out.printf("la variable 1 es %1$ 3d y la variable 2 es %2$s, pero la variable 1 sigue siendo %1$d%n",3,"pepe");}
-                break;
+            System.out.println("hola");
         }
     }
 }
