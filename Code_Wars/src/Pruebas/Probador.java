@@ -5,6 +5,7 @@
  */
 package Pruebas;
 
+import Programas_3Kyu.Calculator;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -37,7 +38,7 @@ public class Probador {
 //                    +matrix[1][matrix.length-1]+matrix[2][matrix.length-1]
 //                    +Arrays.toString(matrix[matrix.length-1])
 //                    +matrix[1][0]+matrix[2][0];
-            System.out.println("hola");
+            System.out.println(Calculator.evaluate(prueba));
         }
     }
 }

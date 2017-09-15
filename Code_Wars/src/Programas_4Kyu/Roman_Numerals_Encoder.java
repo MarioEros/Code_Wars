@@ -9,6 +9,9 @@ package Programas_4Kyu;
  *
  * @author Eros
  */
+
+Cuenta Erossy no ejecutada.
+
 public class Roman_Numerals_Encoder {
     public String solution(int n) {
         String solucion="";
@@ -72,6 +75,6 @@ public class Roman_Numerals_Encoder {
                 }
                 break;
         }
-        return "caca";
+        return null;
     }
 }
