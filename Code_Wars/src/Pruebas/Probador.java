@@ -21,14 +21,15 @@ public class Probador {
         while (true) {
             String prueba = br.readLine();
             if (prueba.equalsIgnoreCase("fin"))break;
-//            String[] dividido = prueba.split(" ");
+            String caso= "pepe\npaco";
+            String[] dividido = caso.split("\n");
 //            double uno=Double.parseDouble(dividido[0]);
 //            double dos=Double.parseDouble(dividido[1]);
 //            double numdouble=Double.parseDouble(prueba);
 //            float numfloat=Float.parseFloat(prueba);
 //            byte numbyte=Byte.parseByte(prueba);
 //            short numshort=Short.parseShort(prueba);
-            int numint=Integer.parseInt(prueba);
+//            int numint=Integer.parseInt(prueba);
 //            long numlong=Long.parseLong(prueba);
 //            int[][] matrix = new int[][] { new int[] { 5, 3, 6, 1 },
 //                                 new int[] { 5, 8, 7, 4 },
@@ -38,7 +39,8 @@ public class Probador {
 //                    +matrix[1][matrix.length-1]+matrix[2][matrix.length-1]
 //                    +Arrays.toString(matrix[matrix.length-1])
 //                    +matrix[1][0]+matrix[2][0];
-            System.out.println(Dire(numint));
+            System.out.println(caso);
+            System.out.println(dividido[0]+" "+dividido[1]);
         }
     }
 }
