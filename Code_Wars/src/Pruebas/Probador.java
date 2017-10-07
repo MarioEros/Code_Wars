@@ -43,7 +43,10 @@ public class Probador {
 //                    +matrix[1][0]+matrix[2][0];
             //System.out.println(caso);
             //System.out.println(dividido[0]+" "+dividido[1]);
-            Tirada();
+            System.out.println(DadoAcotado(125, 50));
+            System.out.println(DadoAcotado(125, 50));
+            System.out.println(DadoAcotado(125, 50));
+            System.out.println(DadoAcotado(125, 50));
         }
     }
     public static void Tirada(){
@@ -60,5 +63,8 @@ public class Probador {
     }
     public static int Dado(int x){
         return (int)(Math.random() * x) + 1;
+    }
+    public static int DadoAcotado(int x,int y){
+        return (int)(Math.random() * (x-y))+y+1;
     }
 }
