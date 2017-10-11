@@ -9,6 +9,9 @@ package Programas_3Kyu;
  *
  * @author Eros
  */
+
+Cuenta Erossy no ejecutada.
+
 public class Battleship_field_validator {
 
     static int b4ttleship = 0;//1
