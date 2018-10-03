@@ -13,9 +13,10 @@ import jdk.nashorn.internal.runtime.regexp.joni.Regex;
 import sun.misc.Regexp;
 
 /**
- *
- * @author A693126
+ * Title : Assembler interpreter (part II)
+ * State : Completed
  */
+
 public class AssemblerInterpreter {
 
     public static Map<String, Integer> registers;
