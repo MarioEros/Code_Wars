@@ -5,6 +5,11 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Stack;
 
+/**
+ * Title : Game of Go
+ * State : Completed
+ */
+
 public class Go {
 
     private char[][] board;
